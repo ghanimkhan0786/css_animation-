@@ -1,0 +1,82 @@
+/* @import is use import different font from other site's */
+@import url('https://fonts.googleapis.com/css?family=Raleway:200');
+
+h1 {
+  text-align: center;
+  font-family: Raleway;
+  color: #34495e;
+  padding-top: 25px;
+}
+.row{
+  padding-top: 50px;
+}
+div.imga{
+  border: 0;
+}
+img{
+  width: 100%;
+  border-radius: 10px;
+}
+/* For the font icon's [form fontawesome] */
+.tag{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  font-size: 50px;
+  color: #ffffff;
+  line-height: 100px;
+  /* background: #ffffff; */
+}
+/* Setting background-color on every images so when image fade out the color
+   in the background appears */
+div.imga.firstimg{
+  background-color: #34495e;
+  border-radius: 10px;
+}
+/* div.img-thumbnail.firstimg i {
+  color: #34495e;
+} */
+div.imga.secondimg{
+  background-color: #e54444;
+  border-radius: 10px;
+}
+/* div.img-thumbnail.secondimg i {
+  color: #34495e;
+} */
+div.imga.thirdimg {
+  background-color: #16a085;
+  border-radius: 10px;
+}
+/* div.img-thumbnail.thirdimg i {
+  color: #34495e;
+} */
+/* When we hover the mouse on the img it become fad (opacity is the property used)
+and the image become black and white (filter is the property used) */
+div.imga img:hover{
+  opacity: 0.3;
+  filter: grayscale(100);
+}
+/* Here we are adding additional property to both font and image TRANSITION which
+   give the animated effects [Read readme for more info] */
+div.imga * {
+  transition: all 0.3s ease-in-out;
+  /* transition: transform 1s 0ms cubic-bezier(0.6, -0.28, 0.735, 0.045); */
+}
+/* Here we are adding additional property to font TRANSFORM here the scale is zero
+ because we want the font icon to disappear before we hover the image [Read readme for more info] */
+.tag{
+  transform: translate(-50%, -50%) scale(0);
+  /* transition: transform 1s 0ms cubic-bezier(0.6, -0.28,0.735, 0.045); */
+}
+/* Here the scale is 2 because we want the font icon to appear big after we hover the image
+   [Read readme for more info] */
+div.imga:hover .tag {
+  transform: translate(-50%, -50%) scale(2);
+  /* transition: transform 300ms 0ms cubic-bezier(0.6, -0.28,0.735, 0.045); */
+}
+/* Additional this will scale the image when clicked  */
+div.imga:active  {
+  transform: translate(0) scale(2);
+  /* transition: transform 300ms 0ms cubic-bezier(0.6, -0.28,0.735, 0.045); */
+}

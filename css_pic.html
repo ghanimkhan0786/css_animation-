@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Img animation</title>
+  <!-- This link is use to link css file  -->
+    <link rel="stylesheet" href="asset/pic.css">
+  <!-- This link is use to link bootstrap using cdn  [link>>https://www.bootstrapcdn.com/]-->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- Here the script is use to connect the page with font icon
+         provider , so that we can use there font icon in our web page -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+  </head>
+  <body>
+    <h1>An Image Gallery</h1>
+    <!--Add Div with class="container"  -->
+     <div class="container">
+      <!-- Use bootstrap and add a div with class row to arrange the images in a single row. -->
+      <div class="row">
+        <!-- here the class col-lg-4 and col-sm-6 are use to specify the space
+      for each columns for full window(col-lg-4) and when it shrink down(col-sm-6) -->
+        <div class="col-lg-4 col-mn-6">
+          <!-- here class imga is use to make change in every image present -->
+          <!-- And every image has different name so that there properties can be
+               changed individually -->
+          <div class="imga firstimg">
+            <!-- Here tag is use for font [Read readme for more ] -->
+            <i class="fas fa-paw tag"></i>
+            <img src="https://images.unsplash.com/photo-1469386846711-1df926ac1129?ixlib=rb-0.3.5&s=07561161937b469fafaaf6009df8424b&auto=format&fit=crop&w=1350&q=80" alt="">
+          </div>
+        </div>
+        <!-- Repeat the above steps (from class="col-lg-4 col-mn-6") for every images-->
+        <div class="col-lg-4 col-mn-6">
+          <div class="imga secondimg">
+          <i class="fas fa-camera tag"></i>
+            <img src="https://images.unsplash.com/photo-1483119624769-b1a73c256500?ixlib=rb-0.3.5&s=3a533bfa13edf7c8e0972db91d100ba2&auto=format&fit=crop&w=1346&q=80" alt="">
+          </div>
+        </div>
+        <div class="col-lg-4 col-mn-6 ">
+          <div class="imga thirdimg">
+            <img src="https://images.unsplash.com/photo-1483043012503-8a8849b4c949?ixlib=rb-0.3.5&s=41082d54c0dd58d3a9d15644ee522541&auto=format&fit=crop&w=1350&q=80" alt="">
+            <i class="fas fa-female tag"  ></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
